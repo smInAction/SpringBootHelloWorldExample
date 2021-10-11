@@ -12,11 +12,8 @@ public class HelloWorldController {
  
  @GetMapping("/hello")
  public String sayHello() {
-	 logger.trace("A TRACE Message");
-     logger.debug("A DEBUG Message");
-     logger.info("An INFO Message");
-     logger.warn("A WARN Message");
-     logger.error("An ERROR Message");
+     logger.info("In sayHello method...");
+     logger.warn("Warning! There is some discrepancy in processing request.");
 	 return "Hello world from Epam!";
  }
 }
